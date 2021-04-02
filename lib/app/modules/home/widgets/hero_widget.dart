@@ -13,7 +13,7 @@ class HeroWidget extends StatelessWidget {
         onTap: () {
           Navigator.pushNamed(
             context,
-            "/home/hero-details",
+            "/hero-details",
             arguments: hero,
           );
         },
