@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import '../../../shared/style/app_dimensions.dart';
-import '../../../shared/widgets/custom_text_field_widget.dart';
-import '../cubits/heros/heros_cubit.dart';
-import '../widgets/heros_widget.dart';
+import '../../shared/style/app_dimensions.dart';
+import '../../shared/widgets/custom_text_field_widget.dart';
+import 'cubits/heros/heros_cubit.dart';
+import 'widgets/heros_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override

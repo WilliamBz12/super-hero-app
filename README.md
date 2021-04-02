@@ -1,16 +1,51 @@
-# superherapp
+# Coding Challenge
 
-A new Flutter project.
+This is a simple project where the user can search by heros and find your details.
 
-## Getting Started
+# Technologies
+- Flutter
+- SuperHero API
 
-This project is a starting point for a Flutter application.
+## Start
 
-A few resources to get you started if this is your first Flutter project:
+To clone the application:
+``` bash
+git clone https://github.com/WilliamBz12/super-hero-app
+cd superhero-app
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Install dependencies
+`flutter pub get`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Running app
+`flutter run`
+
+## Running the tests
+`flutter test`
+
+Tests were build for cubits and repositories, there were several situations that can occur, sucessful, insucessful, exception, etc.
+
+### Development
+
+In the arquitecture was used Flutter Modular and to state management Cubit (flutter_bloc).
+
+#### Arquitecture
+```
+modules/
+|-home
+|- home
+	|- repositories
+	|- cubits
+	|- widgets
+	|- pages
+	home_module.dart
+	home_page.dart
+shared/
+	|-api
+		api_client_factory.dart #As API provider
+	|-style #App style
+	|-widgets #common widgets
+```
+
+#### Enjoy!

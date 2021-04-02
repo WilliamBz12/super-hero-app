@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'cubits/heros/heros_cubit.dart';
-import 'pages/home_page.dart';
+import 'home_page.dart';
 import 'repositories/hero_repository.dart';
 
 class HomeModule extends ChildModule {
