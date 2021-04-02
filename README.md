@@ -33,7 +33,6 @@ In the arquitecture was used Flutter Modular and to state management Cubit (flut
 #### Arquitecture
 ```
 modules/
-|-home
 |- home
 	|- repositories
 	|- cubits
@@ -43,7 +42,7 @@ modules/
 	home_page.dart
 shared/
 	|-api
-		api_client_factory.dart #As API provider
+	api_client_factory.dart #As API provider
 	|-style #App style
 	|-widgets #common widgets
 ```
