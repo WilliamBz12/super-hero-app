@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:superherapp/app/shared/style/colors.dart';
+import '../../shared/style/colors.dart';
 
 class SplashPage extends StatefulWidget {
   @override

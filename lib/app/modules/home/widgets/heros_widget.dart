@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:superherapp/app/shared/models/hero_model.dart';
-import 'package:superherapp/app/shared/style/app_dimensions.dart';
+
+import '../../../shared/models/hero_model.dart';
+import '../../../shared/style/app_dimensions.dart';
 import 'hero_widget.dart';
 
 class HerosWidget extends StatelessWidget {

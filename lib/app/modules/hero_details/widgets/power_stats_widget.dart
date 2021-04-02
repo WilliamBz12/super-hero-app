@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:superherapp/app/shared/models/powerstats_model.dart';
-import 'package:superherapp/app/shared/style/app_dimensions.dart';
+import '../../../shared/models/powerstats_model.dart';
+import '../../../shared/style/app_dimensions.dart';
 
 import 'item_widget.dart';
 

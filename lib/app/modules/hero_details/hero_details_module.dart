@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:superherapp/app/modules/hero_details/hero_details_page.dart';
+import 'hero_details_page.dart';
 
 class HeroDetailsModule extends ChildModule {
   @override

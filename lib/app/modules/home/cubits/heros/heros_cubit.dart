@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:superherapp/app/shared/models/hero_model.dart';
+import '../../../../shared/models/hero_model.dart';
 import '../../repositories/hero_repository.dart';
 
 part 'heros_state.dart';

@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:superherapp/app/shared/models/hero_model.dart';
+import '../../../shared/models/hero_model.dart';
 
 class HeroRepository {
   final Dio client;
