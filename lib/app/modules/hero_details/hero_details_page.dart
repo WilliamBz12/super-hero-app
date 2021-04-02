@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:superherapp/app/shared/models/hero_model.dart';
 import '../../shared/style/app_dimensions.dart';
-import '../home/models/hero_model.dart';
 import 'widgets/appearence_widget.dart';
 import 'widgets/biography_widget.dart';
 import 'widgets/connections_widget.dart';

@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:superherapp/app/shared/models/hero_model.dart';
 import '../../repositories/hero_repository.dart';
-import '../../models/hero_model.dart';
 
 part 'heros_state.dart';
 part 'heros_cubit.freezed.dart';
@@ -12,7 +12,17 @@ class HerosCubit extends Cubit<HerosState> {
 
   void load() async {
     emit(HerosState.loadLoading());
-    final result = await _repository.fetchAll();
+    //search with A to start
+    final result = await _repository.fetchAllByFilter("a");
+    result.fold(
+      (message) => emit(HerosState.loadFailure(message)),
+      (data) => emit(HerosState.loadLoadded(data)),
+    );
+  }
+
+  void loadByFilter(String text) async {
+    emit(HerosState.loadLoading());
+    final result = await _repository.fetchAllByFilter(text);
     result.fold(
       (message) => emit(HerosState.loadFailure(message)),
       (data) => emit(HerosState.loadLoadded(data)),

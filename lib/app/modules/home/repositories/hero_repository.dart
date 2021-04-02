@@ -8,10 +8,13 @@ class HeroRepository {
 
   HeroRepository({@required this.client});
 
-  Future<Either<String, List<HeroModel>>> fetchAll() async {
+  Future<Either<String, List<HeroModel>>> fetchAllByFilter(String text) async {
     try {
-      final result = await client.get("/search/bat");
+      final result = await client.get("/search/$text");
 
+      if (result.data["response"] == "error") {
+        return Left(result.data["error"]);
+      }
       var heros = <HeroModel>[];
 
       for (var item in result.data["results"]) {
